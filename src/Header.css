@@ -1,0 +1,139 @@
+.header {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.header__menuIcon {
+    color: black;
+    display: none;
+}
+
+.header__logo {
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 18px;
+    object-fit: contain;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header__optionLineOne {
+    font-size: 10px;
+}
+
+.header__optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header__optionBasket {
+    display: flex;
+    align-items: center;
+}
+
+.header__basketCount {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.header__search {
+    display: flex;
+    flex: 1;
+}
+
+.header__searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+
+
+.header__searchIcon {
+    background-color: #f0c14b;
+    padding: 5px;
+    height: 22px !important;
+}
+
+@media screen and (max-width: 500px) {
+
+    .header {
+        height: 100px;
+        width: 100%;
+        background-image: linear-gradient(to top right, #00A8E1, #72e7df);
+        z-index: 10000000;
+        position: fixed;
+    } 
+    
+    .header__menuIcon {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .header__logo {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        margin-top: 0;
+    }
+
+    .header__optionBasket {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: black;
+    }
+
+    .header__basketCount {
+        margin-left: 5px;
+    }
+
+    .notInResponsive {
+        display: none;
+    }
+
+    .header__search{
+        position: absolute;
+        top: 60px;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+       
+    }
+
+    .header__searchInput {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .header__searchIcon {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-style: none;
+    }
+    
+}

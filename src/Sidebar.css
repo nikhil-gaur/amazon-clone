@@ -1,0 +1,41 @@
+.hideSidebar {
+    display: none !important;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    z-index: 10000;
+    position: relative;
+    top: 0;
+    left: 0;
+   
+}
+
+
+.sidebar__option {
+    margin-left: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to top right, #00A8E1, #72e7df);
+    margin: 5px;
+}
+
+.sidebar__option > h3 {
+    text-decoration: none !important;
+    color: black;
+}
+
+.sidebar__welcome {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__welcome > h3 {
+    margin-left: 5px;
+}
+
+

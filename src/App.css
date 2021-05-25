@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+}
+
+.checkout__main {
+  display: flex;
+}
+
+.checkout__mainSidebar {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.checkout__mainChekout {
+  position: relative;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,53 @@
+
+.checkout {
+    display: flex;
+    padding: 20px;
+    height: max-content;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    
+}
+
+.checkout__title {
+    margin-left: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.checkout__add {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .checkout {
+        flex-direction: column-reverse;
+        padding-right: 0;
+        
+    }
+
+  .checkout__right {
+      position: relative;
+      top: 20px;
+      right: 20px;
+      margin-bottom: 10px;
+  }
+
+  .checkout__left {
+        width: 300px;
+  }
+
+  
+}
+
+@media screen and (max-width: 443px) {
+    .checkout__add {
+        width: 80%;
+    }
+
+    .checkout {
+        object-fit: contain;
+    }
+}
+
